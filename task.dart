@@ -69,20 +69,90 @@
 // }
 
 ///////////////////////////////////////////////////////////////////
-void main() {
-  Map<String, double> cart = {"Shirt": 20, "Jeans": 50, "Shoes": 80};
-  double discount = 0.10;
+// void main() {
+//   Map<String, double> cart = {"Shirt": 20, "Jeans": 50, "Shoes": 80};
+//   double discount = 0.10;
 
-  double total = calculateTotal(cart, discount);
-  print("Total amount after discount: ${total.toStringAsFixed(2)}");
-}
+//   double total = calculateTotal(cart, discount);
+//   print("Total amount after discount: ${total.toStringAsFixed(2)}");
+// }
 
-double calculateTotal(Map<String, double> cart, double discount) {
-  double total = 0.0;
+// double calculateTotal(Map<String, double> cart, double discount) {
+//   double total = 0.0;
 
-  for (double price in cart.values) {
-    total += price;
-  }
+//   for (double price in cart.values) {
+//     total += price;
+//   }
 
-  return total - (total * discount);
-}
+//   return total - (total * discount);
+// }
+/////////////////////////////////////////////////////////////////////////
+// class Car {
+//   String brand;
+//   String model;
+//   int year;
+
+//   Car(this.brand, this.model, this.year);
+
+//   void displayInfo() {
+//     print('Brand: $brand');
+//     print('Model: $model');
+//     print('Year: $year');
+//   }
+// }
+
+// void main() {
+//   Car car1 = Car('Verna', 'Model U', 2022);
+//   Car car2 = Car('Volvo', 'Corolla', 2020);
+
+//   car1.displayInfo();
+//   car2.displayInfo();
+// }
+/////////////////////////////////////////////////////////////////////////
+// class Animal {
+//   void makeSound() {
+//     print('Animal makes a sound');
+//   }
+// }
+
+// class Dog extends Animal {
+//   @override
+//   void makeSound() {
+//     print('Dog barks');
+//   }
+// }
+
+// class Cat extends Animal {
+//   @override
+//   void makeSound() {
+//     print('Cat meows');
+//   }
+// }
+
+// void main() {
+//   Dog dog = Dog();
+//   Cat cat = Cat();
+
+//   dog.makeSound();
+//   cat.makeSound();
+// }
+///////////////////////////////////////////////////////////////////////////
+// class BankAccount {
+//   double _balance = 0;
+
+//   double get balance => _balance;
+
+//   set deposit(double amount) {
+//     if (amount < 0) {
+//       print('Error: Cannot deposit a negative amount!');
+//     } else {
+//       _balance += amount;
+//     }
+//   }
+// }
+
+// void main() {
+//   BankAccount account = BankAccount();
+//   account.deposit = 500;
+//   print('Balance: ${account.balance}');
+// }
